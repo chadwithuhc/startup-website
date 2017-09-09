@@ -1,0 +1,254 @@
+/* Modifications made 06/09/2016 by Andy Johnsen andy@windcompanionwebdesign.com */
+
+/* GENERAL */
+@media (min-width: 768px) {
+    .vertical-align {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* BANNER */
+.intro-video {
+}
+
+/* INFO BAR - UNDER BANNER */
+.info-bar {
+    white-space: normal;
+    text-align: center;
+    height: auto;
+}
+.info-bar .info-bar-text {
+    border-left: none;
+    font-size: 17px;
+    line-height: 26.5px;
+    padding: 9px 0 0;
+    margin: 0;
+}
+.info-bar .icon-group {
+    text-align: right;
+}
+.icon-google-apps {
+    display: inline-block;
+    width: 38.5px;
+    height: 39.5px;
+    background: url(../images/icon-google-apps.png) no-repeat;
+    background-size: cover;
+    margin: 14px 16px;
+}
+.info-bar .supported-devices {
+    text-align: left;
+}
+.info-bar .supported-devices img {
+    height: 70px;
+}
+@media (min-width: 992px) and (max-width: 1023px) {
+    .info-bar .icon-group {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .info-bar .info-bar-text {
+        width: 100%;
+    }
+}
+@media (max-width: 991px) {
+    .info-bar .icon-group,
+    .info-bar .supported-devices {
+        margin-bottom: 20px;
+    }
+    .info-bar .info-bar-text {
+        width: 100%;
+        max-width: 560px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 767px) {
+    .info-bar .icon-group,
+    .info-bar .supported-devices {
+        text-align: center;
+    }
+}
+
+/* MAIN HOME CONTENT */
+.full-page__container {
+    height: auto;
+    overflow: visible;
+}
+.full-page__content {
+    height: auto;
+    padding: 100px 0;
+}
+#email-transformed.full-page__content {
+    padding: 100px 0 250px;
+}
+#chat.full-page__content {
+    padding: 200px 0 100px;
+}
+.full-page__content img {
+    max-width: 100%;
+}
+.info-block-title {
+    font-size: 28px;
+    letter-spacing: -1.3px;
+    margin: 16px 0 10px;
+}
+.info-block-text {
+    font-size: 17px;
+    line-height: 1.56;
+    max-width: 420px;
+}
+.redkix-rundown {
+    text-align: center;
+}
+.redkix-rundown img {
+    margin: 0 0 40px;
+    width: 113px;
+}
+.redkix-rundown .info-block-text {
+    max-width: 870px;
+    margin: 0 auto 34px;
+}
+.home-footer {
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 1400px) {
+    .home-footer {
+        height: 470px;
+    }
+}
+@media (max-width: 1200px) {
+    .home-footer {
+        height: 600px;
+    }
+}
+@media (max-width: 991px) {
+    .full-page__content .container {
+        max-width: 768px;
+    }
+    .info-block-title {
+        font-size: 24px;
+        letter-spacing: -1.2px;
+    }
+    .info-block-text {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 100%
+    }
+    #email-transformed.full-page__content {
+        padding: 100px 0;
+    }
+    .redkix-rundown .info-block-text {
+        max-width: 584px;
+    }
+}
+@media (max-width: 767px) {
+    #home {
+        padding-top: 69px;
+    }
+    .full-page__content .container {
+        text-align: center;
+    }
+    .info-block-text {
+        max-width: 100%
+    }
+    .full-page__content,
+    #email-transformed.full-page__content {
+        padding: 66px 0;
+    }
+    #chat.full-page__content {
+        padding: 100px 0 66px;
+    }
+}
+@media (max-width: 766px) {
+    .full-page {
+        padding-top: 0;
+    }
+}
+@media (max-width: 459px) {
+    .home-footer {
+        height: 680px;
+        padding: 0 5px;
+    }
+}
+
+/* BG IMAGES */
+.bottom-spacehome {
+    width: 312px;
+}
+.leftspacehome {
+    bottom: -115px;
+}
+.bottom-spacehome {
+    bottom: -66px;
+    right: 10%;
+}
+@media (max-width: 1280px) {
+    .spacehome {
+        top: 75px;
+    }
+}
+@media (max-width: 1023px) {
+    .bottom-spacehome {
+        right: 0;
+    }
+}
+@media (max-width: 991px) {
+    .spacehome,
+    .mailbird,
+    .leftspacehome,
+    .sidegraphic {
+        display: none;
+    }
+    .spacehome-mobile {
+        width: 144px;
+        height: 215px;
+        display: block;
+        right: 0;
+        top: 40px;
+        position: absolute;
+    }
+    .mailbird-mobile {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .leftspacehome-mobile {
+        display: block;
+        position: absolute;
+        bottom: -100px;
+        left: -24px;
+    }
+}
+@media (max-width: 766px) {
+    .mailbird-mobile {
+        bottom: -2vh;
+        left: -8px;
+    }
+    .leftspacehome-mobile {
+        left: -23px;
+        bottom: -60px;
+    }
+    .bottom-spacehome {
+        display: block;
+        right: -92px;
+        width: 242px;
+        bottom: -40px;
+    }
+    .subscribe-left {
+        display: block;
+        left: -100px;
+    }
+    .subscribe-right {
+        display: block;
+        right: -242px;
+    }
+}
+@media (max-width: 459px) {
+    .spacehome-mobile {
+        top: 24px;
+    }
+}
